@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+     <head> <!-- contém instruções para a página HTML -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- o conteúdo da viewport (área da página) deve ocupar a lárgura do dispositivo (device-width) e a escala incial deve ser 1 (não precisa dar zoom). Instrução especialmente importante para sites que serão abertos em diferentes dispositivos -->
+        <title>Móveis customizados</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body> <!-- apresentação visual da página -->
+
+        
+        <div id="hero">
+            <img src="images/img1.png" alt="Desenho de uma pessoa vestindo uma camisa amarela e em uma sala com móveis"/>
+            
+            <h1>Ambientes <span>únicos</span> para você!</h1> <!-- A <span> é uma tag IN-LINE, ou seja, ela não causa a quebra de linha como as tags BLOCK. Outro exemplo de tag in-line é a tag de links <a> -->   
+
+            <p>
+                Nós criamos ambientes <strong>exclusívos e únicos</strong>, 
+                com muito bom gosto e profissionalismo,
+                investimos tempo e <span>dedicação no seu projeto</span>.
+            </p>
+            <!-- Uma forma de realizar a quebra de linha sem criar dois parágrafos é aplicando a tag <br/> (break). Essa tag irá quebrar 1 linha. -->
+            
+            <br/>
+            <br/>
+                        
+            <p>
+                Tenha <span>ambientes limpos</span> e bem decorados, 
+                transmitindo <strong>elegância e finesse</strong> para todo
+                aquele que estiver ali.
+            </p>
+        </div>
+
+        <div id="footer">
+            
+            <div id="line"></div>
+            <!-- Outra forma mais rápida de criar a <div> e o seu id é simplesmente escrevendo #iddadiv -->
+
+            <a target="_blank" href="https://instagram.com/moveisparavoce">Instagram</a>
+            <!-- &nbsp; Este comando criará um espaço entre os links criados. Mas existe outra forma de fazê-lo. -->            
+            <a href="mailto:contato@moveisparavoce.com">Fale conosco!</a>
+        </div>
+
+        <img id="balls" src="images/balls.svg" alt="Bolinhas laranjadas no canto direito inferior da tela"/>
+    
+    </body>
+
+</html>

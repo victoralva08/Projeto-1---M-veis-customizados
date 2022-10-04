@@ -1,0 +1,79 @@
+body, p, a{
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+    margin: 0; /* Este comando zera uma margem de 8px que os navegadores, por padrão, colocam acima de todo o elemento <body>*/
+}
+
+#hero{
+    width: 592px; /* A delimitação dessa caixa "reduz" a eficácia do comando text-align. Embora os elementos dentro da caixa estejam alinhados, a caixa NÃO está mais no centro da página.*/
+    margin: 0 auto 72px; /* O comando 0 (que vem primeiro) indica a distância da caixa #hero do topo da página. O comando margin: auto (que vem em segundo) faz justamente a correção do posicionamento da caixa #hero na página! (Vale lembrar que essa correção se dá apenas no eixo horizontal). O 72px (que vem em terceiro) é a distância abaixo da imagem. Por isso é importante evidenciar o valor 0! */
+    /* Outra forma de pensar na posição dos valores do margin é como se fosse um relógio: o primeiro valor é o top, o segundo à direita, o terceiro abaixo e o quarto à esquerda! */
+    /* Essa escrita é o "short-hand" de:
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto; */
+}
+
+#hero img{
+    margin-bottom: 72px; /* Cria um espaçamento de 72px ABAIXO da imagem */
+}
+
+
+h1{ /* Como há uma especificidade maior em indicar a tag <h1> do que a tag <body> abaixo, a mudança de fontes NÃO acontecerá na tag <h1>, pois o CSS prioriza atribuições mais específicas! */
+    font-family: 'Inter', sans-serif;
+    font-weight: normal; /* Por padrão, as fontes da tag <h1> são BOLD */
+    line-height: 56px;
+    font-size: 49px;
+
+    margin-bottom: 32px;
+}   
+
+h1 span{ /* A sintaxe do <span> após <h1> indica que o span (escrito após h1) está DENTRO da tag <h1>, fazendo just ao conceito de cascata do CSS :) */
+    font-weight: bold;
+}
+
+/*p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+} */
+
+/* Abaixo, há uma forma alternativa de concender as mesma propriedades à diferentes elementos HTML: */
+
+
+span, a{
+    color: #FF9900;
+}
+
+p, #footer{ /* A cor do texto do #footer (ou seja, os dois links <a>) NÃO receberão a cor cinza, pois no comando a cima o nível de especificidade foi maior, e o CSS SEMPRE dará prioridade para quanto maior for a especificidade */
+    color: #7D7987;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+}
+
+#footer a + a{ /* Esse comando seleciona o elemento <a> dentro de id="footer" que tenha, anterior à ele, um <a>. */
+    margin-left: 28px; /*Logo, está sendo aplicada uma margem de 28px à esquerda do segundo <a>, ou seja, no "Fale Conosco!". Isso fará com que o elemento em conjunto fique corretamente cetralizado. */
+}
+
+#footer{
+    margin-bottom: 32px;
+}
+
+#line{
+    width: 568px;
+    height: 0px;
+
+    margin: 0 auto 8px; /* Para lembrar novamente da aplicação do margin: o 8 é a medida acima, o auto nas laterais e o 8px a medida abaixo, em sentido horário! */
+
+    border: 1px solid #eceff2;
+}
+
+#balls{
+    position: fixed; /* O comando position cria uma nova "camada" sobre a págna, de tal forma que a imagem sobreponha todos os outros elementos e permaneça fixa na posição mesma com o rolamento da página. */
+    bottom: 0px;
+    right: 0px;
+}
