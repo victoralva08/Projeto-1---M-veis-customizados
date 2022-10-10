@@ -4,7 +4,7 @@
 
 >Explorer Path
 
-Project using Swiper library.
+Project developed with HTML and CSS. 
 
 🔗 [Click here to access the website project](https://victoralva08.github.io/projeto1-RS/)
 
