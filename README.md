@@ -1,4 +1,4 @@
-# NLW eSports 
+# Project 1
 
 ![preview](./screenshot.png)
 
