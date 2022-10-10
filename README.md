@@ -1,10 +1,8 @@
-# Project 1
+# Project 1 - Rocket Seat Explorer
 
 ![preview](./screenshot.png)
 
->Explorer Path
-
-Project developed with HTML and CSS. 
+>Project developed with HTML and CSS in the Rocket Seat's Explorer Program.
 
 🔗 [Click here to access the website project](https://victoralva08.github.io/projeto1-RS/)
 
