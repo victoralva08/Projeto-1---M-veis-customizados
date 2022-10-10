@@ -13,7 +13,6 @@ Project using Swiper library.
 - HTML
 - CSS 
 - Git & Github
-- Swiper
 
 ## 📞 Contact
 
